@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas</title>
+	<link rel="stylesheet" type="text/css" href="style.min.css" >
+</head>
+<body>
+<div class="container">
+	<div class="menu col-md-4">
+		<form class="form-signin" onsubmit="return false">
+			<div class="shape_type">
+				<select id="shape_type" onchange="updateShapeSetting()">
+					<option value="triangle">
+						Triangle
+					</option>
+					<option value="rectangle">
+						Rectangle
+					</option>
+					<option value="circle">
+						Circle
+					</option>
+				</select>
+			</div>
+			<div class="shape_setting">
+				<div class="color">
+					<label>Fill Color:</label> <input id="fill_color" placeholder="">
+				</div>
+				<div class="color">
+					<label>Border Color:</label> <input id="border_color" placeholder="">
+				</div>
+				<div class="triangle" id="triangle" style="display: none;">
+					<div class="coordinate">
+						<div>
+							<label>X1:</label> <input id="triangle_x1" placeholder="">
+						</div>
+						<div>
+							<label>Y1:</label> <input id="triangle_y1" placeholder="">
+						</div>
+					</div>
+					<div class="coordinate">
+						<div>
+							<label>X2:</label> <input id="triangle_x2" placeholder="">
+						</div>
+						<div>
+							<label>Y2:</label> <input id="triangle_y2" placeholder="">
+						</div>
+					</div>
+					<div class="coordinate">
+						<div>
+							<label>X3:</label> <input id="triangle_x3" placeholder="">
+						</div>
+						<div>
+							<label>Y3:</label> <input id="triangle_y3" placeholder="">
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="rectangle" id="rectangle" style="display: none;">
+					<div class="coordinate">
+						<div>
+							<label>X1:</label> <input id="rectangle_x1" placeholder="X1">
+						</div>
+						<div>
+							<label>Y1:</label> <input id="rectangle_y1" placeholder="Y1">
+						</div>
+					</div>
+					<div class="coordinate">
+						<div>
+							<label>X2:</label> <input id="rectangle_x2" placeholder="X2">
+						</div>
+						<div>
+							<label>Y2:</label> <input id="rectangle_y2" placeholder="Y2">
+						</div>
+					</div>
+				</div>
+				<div class="circle" id="circle">
+					<div class="radius">
+						<label>Radius:</label> <input id="radius" placeholder="Radius">
+					</div>
+					<div class="coordinate">
+						<div>
+							<label>CenterX:</label> <input id="centerX" placeholder="CenterX">
+						</div>
+						<div>
+							<label>CenterY:</label> <input id="centerY" placeholder="CenterY">
+						</div>
+					</div>
+				</div>
+			</div><input class="submit" onclick="render(); setDefaultValueInMenuSetting();" type="submit" value="Отправить">
+		</form>
+	</div>
+	<canvas class="col-md-8" height="500" id="drawing_area" width="650"></canvas>
+	<div class="clear"></div>
+</div>
+<script src="script.min.js" type="text/javascript">
+</script>
+<script>
+    start();
+</script>
+</body>
+</html>

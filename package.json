@@ -1,0 +1,19 @@
+{
+  "name": "Canvas",
+  "version": "0.1.0",
+  "description": "Grunt",
+  "author": "Vadim",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-uglify": "^2.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-file-hash": "^0.1.6",
+    "grunt-hashres": "^0.4.1"
+  }
+}
