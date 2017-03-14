@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 
             scripts: {
                 files: ['js/*.js'],
-                tasks: [ 'clean:js_min', 'concat', 'uglify', 'clean:script', 'eslint', 'hashres:scripts'],
+                tasks: [ 'clean:js_min', 'concat', 'uglify', 'eslint', 'clean:script', 'hashres:scripts'],
             },
 
             html: {
