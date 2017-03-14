@@ -64,7 +64,6 @@ input, .radius input
     width: 100%;
     margin: 0 auto;
     display: block;
-    max-width: 250px;
     border-radius: 5px;
     border-style: none;
     height: 30px;
@@ -74,11 +73,8 @@ input, .radius input
 
 .triangle, .rectangle, .circle
 {
-    max-width: 285px;
     margin: 0 auto;
 }
-
-
 .submit
 {
     cursor: pointer;

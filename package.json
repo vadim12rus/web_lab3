@@ -15,5 +15,8 @@
     "grunt-eslint": "^19.0.0",
     "grunt-file-hash": "^0.1.6",
     "grunt-hashres": "^0.4.1"
+  },
+  "scripts": {
+    "start": "grunt"
   }
 }
